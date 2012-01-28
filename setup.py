@@ -5,6 +5,7 @@ from distutils.core import setup
 
 setup(
     name = "prettytable",
+    version = "0.1",
     description = "Pretty prints tables.",
     author = "Martin Ueding",
     author_email = "<dev@martin-ueding.de>",
