@@ -9,6 +9,7 @@ setup(
     description = "Pretty prints tables.",
     author = "Martin Ueding",
     author_email = "<dev@martin-ueding.de>",
+    license = "GPL3",
 
     py_modules = ["prettytable"]
 )
