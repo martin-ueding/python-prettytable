@@ -7,9 +7,6 @@
 Pretty prints tables.
 """
 
-
-__docformat__ = "javadoc en"
-
 import sys
 import datetime
 
@@ -17,9 +14,12 @@ def print_table(headers, data, margin=2, outfile=None):
     """
     Prints a table with header and data.
 
-    @param headers List of column headers.
-    @param data List of rows which are lists of columns.
-    @param margin Spacing between columns-
+    @param headers: List of column headers.
+    @type headers: list
+    @param data: List of rows which are lists of columns.
+    @type data: list
+    @param margin: Spacing between columns-
+    @type margin: int
     """
     if outfile is None:
         outfile = sys.stdout
@@ -48,6 +48,19 @@ def print_table(headers, data, margin=2, outfile=None):
 
 
 def _justify(data, data_str, width):
+    """
+    Justifies most strings to the left.
+
+    If the data is of instance C{int}, the given string is justified to the
+    right.
+
+    @param data: Data to check the instance of.
+    @type data: object
+    @param data_str: String to justify.
+    @type data_str: str
+    @param width: Justification width.
+    @type width: int
+    """
     if any([isinstance(data, candidate) for candidate in [int]]):
         return data_str.rjust(width)
     else:
