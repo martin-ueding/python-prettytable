@@ -19,6 +19,8 @@ def print_table(headers, data, margin=2, outfile=None):
     @type data: list
     @param margin: Spacing between columns-
     @type margin: int
+    @param outfile: File to write to.
+    @type outfile: file
     """
     if outfile is None:
         outfile = sys.stdout
