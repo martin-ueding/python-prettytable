@@ -4,12 +4,11 @@
 from distutils.core import setup
 
 setup(
-    name = "prettytable",
-    version = "0.1",
-    description = "Pretty prints tables.",
     author = "Martin Ueding",
     author_email = "<dev@martin-ueding.de>",
+    description = "Pretty prints tables.",
     license = "GPL3",
-
+    name = "prettytable",
     py_modules = ["prettytable"]
+    version = "0.1",
 )
