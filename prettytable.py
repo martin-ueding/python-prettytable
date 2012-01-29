@@ -7,9 +7,11 @@
 Pretty prints tables.
 """
 
+
 __docformat__ = "javadoc en"
 
 import sys
+import datetime
 
 def print_table(headers, data, margin=2, outfile=None):
     """
@@ -38,9 +40,15 @@ def print_table(headers, data, margin=2, outfile=None):
 
     outfile.write("\n")
 
-    for row in data_str:
+    for row, row_str in zip(data, data_str):
         for i in range(len(col_widths)):
-            outfile.write(row[i].ljust(col_widths[i])+' '*margin+" ")
+            outfile.write(_justify(row[i], row_str[i], col_widths[i])+' '*margin+" ")
 
         outfile.write("\n")
 
+
+def _justify(data, data_str, width):
+    if any([isinstance(data, candidate) for candidate in [int]]):
+        return data_str.rjust(width)
+    else:
+        return data_str.ljust(width)
