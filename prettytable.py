@@ -8,7 +8,6 @@ Pretty prints tables.
 """
 
 import sys
-import datetime
 
 def print_table(headers, data, margin=2, outfile=None):
     """
