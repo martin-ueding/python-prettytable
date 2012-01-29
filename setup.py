@@ -9,6 +9,6 @@ setup(
     description = "Pretty prints tables.",
     license = "GPL3",
     name = "prettytable",
-    py_modules = ["prettytable"]
+    py_modules = ["prettytable"],
     version = "0.1",
 )
