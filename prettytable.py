@@ -7,7 +7,7 @@
 python-prettytable
 ==================
 
-Python's C{str} class provides the C{rjust}, C{ljust} and C{center} functions that
+Python's ``str`` class provides the ``rjust``, ``ljust`` and ``center`` functions that
 can be used to print a table.
 
 This module provides a simple interface to create a pretty table.
@@ -18,13 +18,13 @@ Call it with::
 
 	prettytable.print_table(headers, data, margin=2, outfile=None)
 
-C{headers} is a list of objects, C{data} is a list of rows, which are lists of
+``headers`` is a list of objects, ``data`` is a list of rows, which are lists of
 objects, one for each table cell.
 
-If you need more margin between the columns, use the C{margin} option.
+If you need more margin between the columns, use the ``margin`` option.
 
-C{outfile} is set to standard out by default, you can set it to any file like
-object that has a C{write} method.
+``outfile`` is set to standard out by default, you can set it to any file like
+object that has a ``write`` method.
 
 sample
 ------
@@ -40,18 +40,20 @@ This is a sample output::
 
 import sys
 
+__docformat__ = "restructuredtext en"
+
 def print_table(headers, data, margin=2, outfile=None):
     """
     Prints a table with header and data.
 
-    @param headers: List of column headers.
-    @type headers: list
-    @param data: List of rows which are lists of columns.
-    @type data: list
-    @param margin: Spacing between columns-
-    @type margin: int
-    @param outfile: File to write to.
-    @type outfile: file
+    :param headers: List of column headers.
+    :type headers: list
+    :param data: List of rows which are lists of columns.
+    :type data: list
+    :param margin: Spacing between columns-
+    :type margin: int
+    :param outfile: File to write to.
+    :type outfile: file
     """
     if outfile is None:
         outfile = sys.stdout
@@ -99,12 +101,12 @@ def _justify(data, data_str, width):
     If the data is of instance C{int}, the given string is justified to the
     right.
 
-    @param data: Data to check the instance of.
-    @type data: object
-    @param data_str: String to justify.
-    @type data_str: str
-    @param width: Justification width.
-    @type width: int
+    :param data: Data to check the instance of.
+    :type data: object
+    :param data_str: String to justify.
+    :type data_str: str
+    :param width: Justification width.
+    :type width: int
     """
     if any([isinstance(data, candidate) for candidate in [int]]):
         return data_str.rjust(width)
