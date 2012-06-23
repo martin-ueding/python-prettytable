@@ -23,8 +23,8 @@
 python-prettytable
 ==================
 
-Python's ``str`` class provides the ``rjust``, ``ljust`` and ``center`` functions that
-can be used to print a table.
+Python's ``str`` class provides the ``rjust``, ``ljust`` and ``center``
+functions that can be used to print a table.
 
 This module provides a simple interface to create a pretty table.
 
