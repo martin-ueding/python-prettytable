@@ -18,6 +18,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+README.rst: prettytable.py
+	python -c 'import prettytable; print prettytable.__doc__.strip()' > $@
+
 html/index.html: prettytable.py
 	epydoc -v $^
 
