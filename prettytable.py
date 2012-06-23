@@ -22,8 +22,9 @@
 # SOFTWARE.
 
 """
+##################
 python-prettytable
-==================
+##################
 
 Python's ``str`` class provides the ``rjust``, ``ljust`` and ``center``
 functions that can be used to print a table.
@@ -44,8 +45,8 @@ If you need more margin between the columns, use the ``margin`` option.
 ``outfile`` is set to standard out by default, you can set it to any file like
 object that has a ``write`` method.
 
-sample
-------
+sample output
+=============
 
 This is a sample output::
 
@@ -54,6 +55,14 @@ This is a sample output::
 	->   Eta    2011-12-22 14:11:24.503932  38 days, 4:51:51.942006
 	->   Gamma  2012-01-13 19:54:29.646120  15 days, 23:08:46.800442
 	->   Sigma  2012-01-24 19:09:00.255799  4 days, 23:54:16.191345
+
+license
+=======
+
+This module is written by `Martin Ueding`_ and licensed under the MIT_ license.
+
+.. _`Martin Ueding`: mailto:dev@martin-ueding.de
+.. _MIT: http://opensource.org/licenses/MIT
 """
 
 import sys
