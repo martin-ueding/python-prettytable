@@ -21,6 +21,8 @@
 README.rst: prettytable.py
 	python -c 'import prettytable; print prettytable.__doc__.strip()' > $@
 
+doc: html/index.html
+
 html/index.html: prettytable.py
 	epydoc -v $^
 
