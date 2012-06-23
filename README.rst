@@ -1,3 +1,7 @@
+:author: `Martin Ueding`_
+:copyright: Copyright © 2012 Martin Ueding <dev@martin-ueding.de>
+:license: MIT_
+
 ##################
 python-prettytable
 ##################
@@ -31,11 +35,6 @@ This is a sample output::
 	->   Eta    2011-12-22 14:11:24.503932  38 days, 4:51:51.942006
 	->   Gamma  2012-01-13 19:54:29.646120  15 days, 23:08:46.800442
 	->   Sigma  2012-01-24 19:09:00.255799  4 days, 23:54:16.191345
-
-license
-=======
-
-This module is written by `Martin Ueding`_ and licensed under the MIT_ license.
 
 .. _`Martin Ueding`: mailto:dev@martin-ueding.de
 .. _MIT: http://opensource.org/licenses/MIT
