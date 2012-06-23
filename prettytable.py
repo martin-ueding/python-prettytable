@@ -124,7 +124,7 @@ def _justify(data, data_str, width):
     """
     Justifies most strings to the left.
 
-    If the data is of instance C{int}, the given string is justified to the
+    If the data is of instance ``int``, the given string is justified to the
     right.
 
     :param data: Data to check the instance of.
